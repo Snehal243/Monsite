@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+<LinearLayout
+    android:id="@+id/layoutlocation"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    >
+        <Spinner
+            android:id="@+id/spin_country1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Country"
+            android:textColorHint="@color/colorHint"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            />
+        <Spinner
+            android:id="@+id/spin_state1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select State"
+            android:textColorHint="@color/colorHint"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            />
+        <TextView
+            android:id="@+id/edtx_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/location"
+            android:textSize="11dp"
+            android:background="@drawable/card_background"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/layoutdatepicker">
+            <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0" />
+
+        <TextView
+            android:id="@+id/txv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select DateTime"
+            android:textColor="@color/colorPrimary"
+            android:textSize="11sp"
+            android:layout_margin="10dp"/>
+        <View
+            android:id="@+id/lin1e"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0" />
+
+        <LinearLayout
+            android:id="@+id/li_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:id="@+id/txv_durationtxt"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="No of Months"
+                android:gravity="center"
+                android:textSize="11sp"
+                android:textColor="@color/black"
+              />
+
+            <Spinner
+                android:id="@+id/spin_perduration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorHint"
+                android:padding="12dp"
+                android:layout_marginLeft="10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="11sp"
+                android:text="Start DateTime"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txv_startdate"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/card_background"
+                android:hint="@string/select_startdate"
+                android:padding="12dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/txv_enddatetext"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="End DateTime"
+            android:gravity="center"
+            android:textSize="11sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/txv_enddate"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/select_enddate"
+            android:textSize="11sp"
+            android:background="@drawable/card_background"
+            android:padding="12dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorPrimary"/>
+     </LinearLayout>
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_Submit"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:layout_weight="1"/>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:background="#E0E0E0" />
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_cancel"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:layout_weight="1"
+        tools:ignore="ButtonOrder" />
+    </LinearLayout>
+</LinearLayout>

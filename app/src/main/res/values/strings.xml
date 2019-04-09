@@ -1,0 +1,75 @@
+<resources>
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="app_name">Monsite</string>
+    <string name="Monsite">Monsite</string>
+    <string name="btn_login">Login</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <!--<string name="facebook_app_id">508796992837965</string>-->
+    <!--<string name="fb_login_protocol_scheme">fb508796992837965</string>-->
+    <string name="facebook_app_id">188501705133983</string>
+    <string name="fb_login_protocol_scheme">fb188501705133983</string>
+    <string name="splash_welcome_text">WELCOME</string>
+    <string name="action_search">Search</string>
+    <string name="fcontact">Contact</string>
+    <string name="Ecomanyname">Company Name</string>
+    <string name="industrytype">Industry Type</string>
+    <string name="ContactPersonsName">Contact Person\'s Name</string>
+    <string name="Designation">Designation</string>
+    <string name="OfficeAddress">OfficeAddress</string>
+    <string name="fname">UserName</string>
+    <string name="summary">Summary of Company</string>
+    <string name="btn_signup">SignUp</string>
+    <string name="fstatus">Status</string>
+    <string name="location">Location</string>
+    <string name="education">Education</string>
+    <string name="keyskill">KeySkill</string>
+    <string name="fkeyskill">KeySkill :</string>
+    <string name="fsummary">Profile Summary</string>
+    <string name="address">Address</string>
+    <string name="skill">Skill</string>
+    <string name="findustryExp">Industry Experties</string>
+    <string name="fdomainExp">Domain Experties</string>
+    <string name="fcategory">Category</string>
+    <string name="fsubcategory">SubCategory</string>
+    <string name="fexperience">Experience </string>
+    <string name="btn_send">Send</string>
+    <string name="SEARCH">SEARCH</string>
+    <string name="status">Status : </string>
+    <string name="feducation">Education :</string>
+    <string name="TitleOfRequirment">Title Of Requirement</string>
+    <string name="rating">Rating</string>
+    <string name="duration">Duration </string>
+    <string name="description">Job Description</string>
+    <string name="btn_Submit">Submit</string>
+    <string name="skillrating">skillrating: </string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="reason">Reason</string>
+    <string name="select_startdate">select_startdate</string>
+    <string name="select_enddate">select_enddate</string>
+    <string name="rbt_available">Available</string>
+    <string name="rbt_notavailable">Not Available</string>
+    <string name="rbl_all">All</string>
+    <string name="Categories">Categories</string>
+    <string name="Go">GO</string>
+    <string name="durations">Total Duration </string>
+    <string name="HiredDetails">Hired Details</string>
+    <string name="clientrating">Client :</string>
+    <string name="Adminrating">Admin :</string>
+    <string name="YearExperience">Year Of Experience</string>
+    <string name="MonthExperience">Month of Experience</string>
+    <string name="dateofhiring">DateOfHiring :</string>
+    <string name="termscondition"><![CDATA[<h2><p>1. When you register on any of the Monsite App or in connection with the Services, you will be asked to create an account and provide Monsite with certain information, including but not limited to, a valid email address ("User Information"). You acknowledge and agree that you have no ownership rights in your account.</p></h2><br>
+    <h2><p>2. All User Information will be used in accordance with the terms of Monsites Privacy Policy. Please note, as set forth in the Privacy Policy, that Monsite may collect certain User Information and may contact Users periodically in accordance with the terms of the Privacy Policy. In addition, Monsite reserves the right to comply, in its sole discretion, with legal requirements, requests from law enforcement agencies or requests from government entities, even to the extent that such compliance may require disclosure of certain User Information. In addition, third parties may retain cached copies of User Information.</p></h2><br>
+<h2><p>3. Indemnity All users agree to indemnify, and hold harmless the Company, its officers, directors, employees and agents from and against any claims, actions, demands, losses or damages arising from or resulting from their use of the App or the Web Site or their breach of the terms of these Terms and Conditions.</p></h2><br>
+<h2><p>3. General </p></h2><br>
+<h2><p>3.1. If any one or more of these Terms and Conditions, or their application in any circumstance, is held invalid, illegal or unenforceable in any respect for any reason, the validity, legality and enforceability of that term or condition in any other respect and the remaining Terms and Conditions shall not in any way be impaired.</p></h2><br>
+<h2><p>3.2. No failure or delay on our part to exercise any right or remedy under these terms and conditions is to be construed or operate as a waiver, nor does any single or partial exercise of any right or remedy by us preclude the further exercise of that right or remedy by us.</p></h2><br>
+<h2><p>3.3. We may assign at any time any or all of the rights and obligations contained in these terms and conditions to any party.</p></h2><br/>
+<h2><p>3.4. These terms and conditions and any dispute or matter arising from your use of the App is governed by the laws of the India Administrative Region. You agree to submit to the jurisdiction of the courts of the Pune, India Region.</p></h2>]]></string>
+
+    <string name="aboutus"><![CDATA[<h2><p><p><p>Montek Tech Services Pvt Ltd is an ISO certified and group of companies. Leading by IIT & MBA professionals. After serving 18 years to HR industries, we understand all pain of hiring manager and trying to create mobile app to support employers. We are on initial stage, looking for your continuous support &feedback to create a finger clicking solutions for your all hiring problem.<br><p>
+In a fast moving world employer has no time to source, screen and interviewed several times and wait for candidate notice period to welcome on the board. In Monsite you will find all interviewed candidate with rating from technical panel and employer who hired them. A well defined candidate work portfolio with their availability date and time. The beauty of this app is, you will click and hire them in 24 hrs time.</p></h2>]]></string>
+
+
+</resources>

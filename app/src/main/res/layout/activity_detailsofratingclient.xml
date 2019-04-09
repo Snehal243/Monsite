@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    >
+    <android.support.v7.widget.CardView
+        android:id="@+id/CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_medium"
+        android:layout_marginLeft="@dimen/spacing_middle"
+        android:layout_marginRight="@dimen/spacing_middle"
+        android:layout_marginTop="@dimen/spacing_medium"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="3dip">
+
+                    <TextView
+                        android:id="@+id/txv_companyname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="PQR hhh"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dip"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/feedback"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="Feedback "
+                    android:textSize="11sp"
+                    android:textColor="#000000"
+                    />
+                <TextView
+                    android:id="@+id/txv_feddback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/skill"
+                    android:layout_weight="1"
+                    android:textSize="11sp"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/li_rating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="3dip"
+                    >
+                    <TextView
+                        android:id="@+id/txv_statu"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="client"
+                        android:gravity="left"
+                        android:textColor="@color/black"
+                        android:textSize="11dp"
+                        android:layout_marginLeft="2dp"
+                        />
+                    <RatingBar
+                        android:id="@+id/clientratingbar"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:max="5"
+                        android:numStars="5"
+                        android:stepSize="0.1"
+                       />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/CardView"
+        android:id="@+id/CardView2"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_medium"
+        android:layout_marginLeft="@dimen/spacing_middle"
+        android:layout_marginRight="@dimen/spacing_middle"
+        android:layout_marginTop="@dimen/spacing_medium"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="3dip">
+                <TextView
+                    android:id="@+id/txv_freename"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="PQR hhh"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dateofhiring"
+                    android:textSize="12dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="2dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dip"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/txv_categories"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/skill"
+                    android:textSize="12dp"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dip"
+                android:orientation="horizontal"
+                >
+              <TextView
+                    android:id="@+id/txv_education"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/skill"
+                    android:textSize="12dp"
+                    android:drawablePadding="20dp"
+                    android:drawableLeft="@drawable/ic_school_black_24dp"
+                    android:layout_weight="1"
+                    />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admin "
+                android:textColor="@color/stay_color"
+                android:textSize="12dp"
+                android:layout_gravity="right"
+                />
+
+            <RatingBar
+                android:id="@+id/ratingbar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:max="5"
+                android:numStars="5"
+                android:scaleY="0.6"
+                android:scaleX="0.6"
+                android:progressTint="#000000"
+                android:stepSize="0.1" />
+
+         </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dip"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/txv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/location"
+                    android:textSize="12dp"
+                    android:layout_weight="1"
+                    android:drawablePadding="20dp"
+                    android:drawableLeft="@drawable/ic_place_black_24dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txv_status11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Client "
+                    android:gravity="right"
+                    android:textColor="@color/stay_color"
+                    android:textSize="12dp"
+                    />
+                <RatingBar
+                    android:id="@+id/clientratingbar1"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:max="5"
+                    android:numStars="5"
+                    android:scaleY="0.6"
+                    android:scaleX="0.6"
+                    android:stepSize="0.1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dip"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/txv_skill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_edit_black_24dp"
+                    android:drawablePadding="20dp"
+                    android:text="@string/skill"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dip"
+                android:orientation="horizontal"
+                >
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dip"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/txv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:drawablePadding="20dp"
+                    android:drawableLeft="@drawable/ic_lightbulb_outline_black_24dp"
+                    android:text="@string/status"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:layout_marginBottom="20dp"
+    >
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="20"
+        android:padding="5dp"
+        android:background="@drawable/button_border"
+        android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="110sp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/TitleOfRequirment"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edtx_titleofrequirment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/card_background"
+                        android:inputType="text"
+                        android:maxLines="2"
+                        android:padding="12dp"
+                        android:textColor="@color/colorPrimary"
+                        android:singleLine="false"
+                        android:textSize="11sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="110sp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/skill"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/edtx_skill"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/card_background"
+                        android:padding="12dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="11sp"
+                      />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:layout_width="110sp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/YearExperience"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                />
+
+                            <Spinner
+                                android:id="@+id/spin_yearxperience"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/card_background"
+                                tools:ignore="TooDeepLayout"
+                                android:layout_marginLeft="10dp"
+                                android:paddingLeft="5dp"
+                               />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:visibility="gone">
+                            <TextView
+                                android:layout_width="110sp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/MonthExperience"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                              >
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <Spinner
+                                        android:id="@+id/spin_monthxperience"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:padding="12dp"
+                                        android:layout_marginLeft="10dp" />
+                                </FrameLayout>
+                            </android.support.v7.widget.CardView>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="110sp"
+                        android:layout_height="wrap_content"
+                        android:text="Date of Hiring"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/txv_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/card_background"
+                        android:maxLines="2"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="11sp"
+                        android:padding="12dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="110sp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/location"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/edtx_location"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:gravity="center_vertical"
+                                android:hint="Select_Location"
+                                android:textSize="11sp"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/colorPrimary"
+                                android:textColorHint="@color/colorPrimary"
+                                android:padding="10dp"
+                                android:background="@drawable/card_background"
+                               />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+                    <TextView
+                        android:layout_width="110sp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/rating"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <RatingBar
+                        android:id="@+id/ratingbar"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:isIndicator="true"
+                        android:max="5"
+                        android:numStars="5"
+                        android:scaleX="1.0"
+                        android:scaleY="1.0"
+                        android:stepSize="1" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="110sp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/duration"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                            <Spinner
+                                android:background="@drawable/card_background"
+                                android:id="@+id/spn_duration"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:paddingLeft="5dp"
+                                android:layout_marginLeft="10dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="110sp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/education"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/edtx_education"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/card_background"
+                        android:padding="12dp"
+                        android:textSize="11sp"
+                        android:textColor="@color/colorPrimary" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="110sp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/description"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/edtx_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/card_background"
+                            android:maxLines="3"
+                            android:textColor="@color/colorPrimary"
+                            android:padding="12dp"
+                            android:textSize="11sp"
+                            android:singleLine="false"
+                            tools:ignore="TextFields" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center">
+                    <Button
+                        android:id="@+id/btn_send"
+                        android:layout_width="170dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/round_button"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:text="@string/btn_Submit" />
+                </LinearLayout>
+               </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "793616290209",
+    "firebase_url": "https://monsite-189707.firebaseio.com",
+    "project_id": "monsite-189707",
+    "storage_bucket": "monsite-189707.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:793616290209:android:2be1194a2b2bc688",
+        "android_client_info": {
+          "package_name": "com.montek.monsite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "793616290209-i387lbm9nf2ur7lndjtr354vmnuqmubp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.montek.monsite",
+            "certificate_hash": "982aec0df6000b7d72dd510a2e8b52b92c2e9daf"
+          }
+        },
+        {
+          "client_id": "793616290209-eglcg9qv5978ifdf1v089cse51dpkb4i.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "793616290209-pjo0e0bvjhnn1mgjs8h9p7g77v52clsv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLVxphuZI3YlwmBo7LvJ3TTErIRLJWnKU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "793616290209-eglcg9qv5978ifdf1v089cse51dpkb4i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

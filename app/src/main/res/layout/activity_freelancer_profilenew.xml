@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/parent_view">
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:id="@+id/img_profile"
+                        android:layout_width="110dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="true"
+                        android:padding="5dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/profile" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+                        <TextView
+                            android:id="@+id/txv_fname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/fname"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:drawableLeft="@android:drawable/ic_dialog_email"
+                            android:drawablePadding="5dp"
+                            android:gravity="center"
+                            android:text="@string/Email"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:text="DOB "
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/txv_dob"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="11/11/2017"
+                                android:textColor="@color/white"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical">
+                        <TextView
+                            android:id="@+id/txv_status11"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:text="Admin "
+                            android:textSize="12sp"
+                            android:textColor="@color/white"
+                            android:layout_marginLeft="2dp"
+                            android:textStyle="bold"
+                            />
+                        <RatingBar
+                            android:id="@+id/rb_ratingBar1"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:max="5"
+                            android:numStars="5"
+                            android:progressTint="#000000"
+                            android:stepSize="0.1" />
+                    </LinearLayout>
+                    <LinearLayout
+                            android:id="@+id/li_clientratingbar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical">
+                            <TextView
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:text="Client "
+                                android:textSize="12sp"
+                                android:textColor="@color/white"
+                                android:layout_marginLeft="2dp"
+                                android:textStyle="bold"
+                                />
+                            <RatingBar
+                                android:id="@+id/clientratingbar"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:max="5"
+                                android:numStars="5"
+                                android:progressTint="#000000"
+                                android:stepSize="0.1" />
+                        </LinearLayout>
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/spinnerinputlayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/colorHint">
+                            <Spinner
+                                android:id="@+id/spin_duartion"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="left"
+                                android:hint="Select duration"
+                                android:textColorHint="@color/colorHint" />
+                        </android.support.design.widget.TextInputLayout>
+                        <LinearLayout
+                            android:id="@+id/ratinglayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/txv_ratedur"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/txv_rate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                            <!--android:drawableLeft="@drawable/rupees12"-->
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/txv_status"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/fstatus"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/txv_fstatus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="Available"
+                                android:textColor="@color/white"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/reasonlayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/reason"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/txv_reason"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="reason"
+                                android:textColor="@color/white"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="#E0E0E0" />
+            <LinearLayout
+                android:id="@+id/HiredDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+               >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/HiredDetails"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="13sp"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/txv_calenderlink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="2dp"
+                    android:text="View Bookings"
+                    android:padding="5dp"
+                    android:layout_gravity="right"
+                    android:textColor="@color/black"
+                    android:background="@drawable/button_bg_transparent"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="7dp"
+                    android:background="#E0E0E0" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="3dip"
+                    android:visibility="gone"
+                    >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_weight="1">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Start date"
+                            android:textColor="@color/black"
+                            android:textSize="12dp"
+                            />
+                        <TextView
+                            android:id="@+id/txv_startdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:textSize="12sp"
+                            android:text="hhh"
+                            tools:ignore="NestedWeights" />
+                       </LinearLayout>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:background="#E0E0E0" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="1" >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="End Date"
+                            android:textColor="@color/black"
+                            android:textSize="13dp"/>
+                        <TextView
+                            android:id="@+id/txv_enddate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:text="hhh"
+                            android:textSize="13sp"
+                            tools:ignore="NestedWeights" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#E0E0E0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="3dip"
+                    android:visibility="visible">
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="TotalPayableRate"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+                    <TextView
+                        android:id="@+id/txv_totalpaid"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:textSize="13dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/li_duration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:padding="3dip">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/durations"
+                        android:textSize="13dp"
+                        android:textColor="@color/black"
+                         />
+
+                    <TextView
+                        android:id="@+id/txv_duration"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="#E0E0E0" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txv_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fsummary"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+                <TextView
+                    android:id="@+id/txv_fsummary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="Fluid understanding of multiple programming
+languages, including C#, C, C++, JavaScript."
+                    android:textSize="13sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="#E0E0E0" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txv_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/location"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+                <TextView
+                    android:id="@+id/txv_flocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="sangli"
+                    android:textSize="13sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/address"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+                <TextView
+                    android:id="@+id/txv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="sangli"
+                    android:textSize="13sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="#E0E0E0" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/skill"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+                <LinearLayout
+                    android:id="@+id/li_skill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
+                    <TextView
+                    android:id="@+id/txv_fskill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="javascript"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    android:background="@drawable/round"
+                    android:padding="8dp"
+                    android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="#E0E0E0" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/findustryExp"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+                <LinearLayout
+                    android:id="@+id/li_industryexp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
+                    <TextView
+                    android:id="@+id/txv_findustryexp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round"
+                    android:padding="8dp"
+                    android:text="Technology"
+                    android:textSize="13sp"
+                    android:textStyle="normal" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="#E0E0E0" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+               <TextView
+                   android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fdomainExp"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+                <LinearLayout
+                    android:id="@+id/li_domainexp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
+                    <TextView
+                    android:id="@+id/txv_fdomainexp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round"
+                    android:padding="8dp"
+                    android:text="Networking"
+                    android:textSize="13sp"
+                    android:textStyle="normal" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="#E0E0E0" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fcategory"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/txv_categories"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Networking"
+                        android:textSize="13sp"
+                        android:textStyle="normal"
+                        tools:ignore="TooManyViews" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/fsubcategory"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/txv_subcategories"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Networking"
+                        android:textSize="13sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="#E0E0E0" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+                <TextView
+                    android:id="@+id/txv_feducation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="BE in Computer Science"
+                    android:textSize="13sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="#E0E0E0" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fexperience"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+                <TextView
+                    android:id="@+id/txv_fexperience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="2 years experience in java developer"
+                    android:textSize="13sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="#E0E0E0" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/buttonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        >
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="@string/btn_signup"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+</LinearLayout>

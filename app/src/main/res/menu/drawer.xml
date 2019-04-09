@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/Job_Search"
+            android:title="DashBoard"
+            android:icon="@android:drawable/ic_menu_search" />
+        <item android:id="@+id/Profile"
+            android:title="Profile"
+            android:icon="@drawable/ic_person_black_24dp" />
+        <item android:id="@+id/Hired_Candidates"
+            android:title="Hired Candidates History"
+            android:icon="@drawable/ic_history_black_24dp" />
+        <item android:id="@+id/Send_requirment"
+            android:title="Send Requirment"
+            android:icon="@android:drawable/ic_menu_send" />
+        <item android:id="@+id/action_editrequirment"
+            android:title="List of Requirements"
+            android:icon="@drawable/ic_assignment_black_24dp" />
+        <item android:id="@+id/action_callReuest"
+            android:title="Conference Call Request"
+            android:icon="@drawable/ic_assignment_black_24dp" />
+    </group>
+    <item android:title="Communicate">
+            <menu>
+                <item
+                    android:id="@+id/action_about"
+                    android:icon="@android:drawable/ic_dialog_info"
+                    android:title="AboutUs" />
+                <item
+                    android:id="@+id/action_call"
+                    android:icon="@android:drawable/ic_menu_call"
+                    android:title="Support Call"
+                    />
+                <item
+                    android:id="@+id/action_logout"
+                    android:icon="@android:drawable/ic_menu_close_clear_cancel"
+                    android:title="LogOut" />
+            </menu>
+        </item>
+</menu>

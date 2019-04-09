@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:visibility="visible"
+        android:baselineAligned="false">
+                <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorPrimary"
+                android:visibility="visible"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:id="@+id/li_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="right"
+                    android:visibility="gone">
+                    <Button
+                        android:id="@+id/btn_search"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end|center_vertical"
+                        android:drawableRight="@android:drawable/ic_menu_search"
+                        android:background="@android:color/transparent"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        />
+                </LinearLayout>
+                <FrameLayout
+                    android:id="@+id/li_edtxsearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:visibility="gone"
+                    android:layout_gravity="center_vertical"
+                    >
+                    <EditText
+                        android:id="@+id/edtx_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:hint="@string/action_search"
+                        android:maxLines="1"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@android:drawable/ic_menu_search"
+                        android:textColorHint="#ffffff"
+                        android:textColor="#ffffff"
+                        />
+                    <Button
+                        android:id="@+id/btn_clear"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="visible" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:id="@+id/filter">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="filter"
+                        android:textColor="@color/black"
+                        android:drawablePadding="5dp"
+                        android:drawableLeft="@drawable/ic_filter_tool_black_shape"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:background="#9E9E9E" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:id="@+id/sort">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sort"
+                        android:padding="8dp"
+                        android:textColor="@color/black"
+                        android:drawablePadding="5dp"
+                        android:drawableLeft="@drawable/ic_sort"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="0dp"
+                android:background="#9E9E9E" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="SubCategory : "
+                        android:textColor="@color/black"
+                        android:gravity="center_vertical"
+                        android:textSize="15dp"
+                        />
+                    <Spinner
+                        android:id="@+id/spn_search"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txv_filtervalues"
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF5340"
+                android:text="jdjdjdjd"
+                android:layout_marginLeft="5dp"
+                android:textSize="15dp"
+                android:padding="2dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" />
+        <LinearLayout
+            android:id="@+id/no_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="?attr/actionBarSize"
+            android:visibility="gone"
+            tools:ignore="UseCompoundDrawables">
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/app_logo" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no_item"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
